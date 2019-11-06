@@ -92,6 +92,16 @@ var embed = new Discord.RichEmbed()
 bot.channels.get("510524304228614185").send(embed)
 return;
 }
+	
+if(message.content === prefix + "invite") {
+    
+let color = "RED"
+ let invit = new Discord.RichEmbed()
+    .setTitle("RedBot - Liens externes")
+    .setColor(color)
+    .setDescription(`:inbox_tray: [M'inviter](https://discordapp.com/oauth2/authorize?client_id=465524720817668127&scope=bot&permissions=2146958591)\n:speech_left:  [Mon serveur de support](https://discord.gg/qNNGqG6)`)
+    return message.channel.send(invit)
+}
 if(message.content.startsWith(prefix + "reply")) {
     if(message.author.id === "ID") {
           var args = message.content.split(" ").slice(0)
