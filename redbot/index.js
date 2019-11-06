@@ -2330,11 +2330,11 @@ fs.writeFile("./assets/chest.json", JSON.stringify(chest), (err)=>console.log(er
 
 if(message.content.startsWith(prefix + "chest open magique")) {
     if(chest[message.author.id].premium == 0) return message.reply("Vous n'avez pas de coffre magique!")
-    let chances = (Math.floor(Math.random() * 9)) + 1
-    let chances2 = (Math.floor(Math.random() * 100))
-    let chances3 = (Math.floor(Math.random() * 11000)) + 1
-    let chances4= (Math.floor(Math.random() * 1500))
-    let chances5 = (Math.floor(Math.random() * 5)) + 1
+let chances = (Math.floor(Math.random() * 1)) + 1
+    let chances2 = (Math.floor(Math.random() * 10))
+    let chances3 = (Math.floor(Math.random() * 1000)) + 1
+    let chances4= (Math.floor(Math.random() * 1000)) + 1
+    let chances5 = (Math.floor(Math.random() * 2)) + 1
     let open = new Discord.RichEmbed()
 .setColor(color)
 .addField(":x: Ouverture d'un coffre magique :x:", "** **")
